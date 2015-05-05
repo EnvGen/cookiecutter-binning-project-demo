@@ -49,4 +49,9 @@ Test if snakemake accepts your input files
 
 Overview of workflow
 --------------------
+Here are some images to help you understand how the different rules defined in [snakemake-workflows](https://github.com/EnvGen/snakemake-workflows) connect together.
+
+###Generating the inputtable for concoct
+To generate an inputtable for concoct, first the assembly will be cut up into smaller pieces and then each sample reads has to be mapped against the cut up assembly. If the sample has been sequenced multiple times, each run will be mapped individually. The output of these mappings will be processed in two steps before merging runs for individual samples and calculating coverage with BEDTools. The graph below shows the details for the assembly of sample1 and reads from sample1 and sample2 where sample1 has been sequenced in two runs. 
+
 ![alt-tag](images/inputtable_1sample.png)
