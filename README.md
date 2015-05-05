@@ -47,5 +47,6 @@ Test if snakemake accepts your input files
     snakemake --dryrun concoct_inputtable_10K_all
 
 
-Images
+Overview of workflow
+--------------------
 ![alt-tag](images/inputtable_1sample.png)
