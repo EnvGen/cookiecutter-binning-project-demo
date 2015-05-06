@@ -37,10 +37,14 @@ Enter the newly created binning project directory
     
     cd binning-project
 
+Create a directory for input data that will be ignored by git
+
+    mkdir data
+
 Create links to the test data
 
-    ln -s ../contigs .
-    ln -s ../reads .
+    ln -s ../contigs data/
+    ln -s ../reads data/
 
 Test if snakemake accepts your input files
 

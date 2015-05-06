@@ -2,7 +2,11 @@
 cookiecutter https://github.com/EnvGen/cookiecutter-binning-project
 
 cd binning-project
-ln -s ../contigs .
-ln -s ../reads .
+
+mkdir data
+
+ln -s ../contigs data/
+ln -s ../reads data/
 
 snakemake --list-target-rules
+snakemake --dryrun concoct_inputtable_10K_all
