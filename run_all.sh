@@ -1,5 +1,5 @@
 #clone_repo:
-cookiecutter https://github.com/EnvGen/cookiecutter-binning-project
+cookiecutter https://github.com/EnvGen/cookiecutter-binning-project --no-input
 
 cd binning-project
 
